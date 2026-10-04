@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bemer-orange: #EB5A23;
+  --color-bemer-orange-light: #EF7D30;
+  --color-bemer-anthracite: #4B4A50;
+  --color-bemer-beige: #ECE3DC;
+  --color-bemer-green: #A1A332;
+  --color-bemer-green-light: #C1C339;
+  
+  --color-bemer-gray-1: #6F6D73;
+  --color-bemer-gray-2: #948F93;
+  --color-bemer-gray-3: #B9B0B0;
+  --color-bemer-gray-4: #D8CFCB;
+}
+
+:root {
+  --bemer-orange: #EB5A23;
+  --bemer-orange-light: #EF7D30;
+  --bemer-anthracite: #4B4A50;
+  --bemer-beige: #ECE3DC;
+  --bemer-gray-dark: #6F6D73;
+  --bemer-gray-medium: #948F93;
+  --bemer-gray-light: #B9B0B0;
+  --bemer-gray-subtle: #D8CFCB;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #4B4A50; /* Official BEMER-Anthrazit */
+    background-color: #faf8f6; /* Warm clean backdrop matching BEMER-Beige */
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    color: #171717;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CFCB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #948F93;
+}
+
+/* Animations for vasomotion and waves */
+@keyframes pulseSlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 4s ease-in-out infinite;
+}

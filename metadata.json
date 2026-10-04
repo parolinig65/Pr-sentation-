@@ -1,0 +1,6 @@
+{
+  "name": "BEMER HUMAN · EVOLINE Präsentation",
+  "description": "Interaktive Präsentations- und Dialog-Suite für BEMER HUMAN · EVOLINE – von Alltagsfrequenzen über Mikrozirkulation und Vasomotion bis zur wissenschaftlichen Evidenz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
